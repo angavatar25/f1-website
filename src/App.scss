@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+body,
+html {
+  // user-select: none;
+  // overscroll-behavior: none;
+  margin: 0;
+  font-family: "Titillium Web" , -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+  "Helvetica Neue", sans-serif !important; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-fluid {
+  padding: 0 80px !important;
+  min-height: 100vh;
+}
+
+.home {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  .first-container {
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .first-section {
+    .headline {
+      color: white;
+      font-weight: 600;
+      font-size: 60px;
+      max-width: 50%;
+    }
+    .play-video {
+      border: none;
+      background-color: transparent;
+      display: flex;
+      .title {
+        color: white;
+        margin: auto;
+        padding-left: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+      }
+      .play-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #F00900;
+        .play-arrow {
+          width: 20px;
+        }
+      }
+    }
+  }
+  .second-container {
+    padding-right: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+  }
+}
